@@ -1,0 +1,34 @@
+{
+  "name": "marketingskills-import-config",
+  "version": "1.0.0",
+  "description": "Cross-package import configuration for marketingskills — defines related packages and skill discovery paths",
+  "related_packages": [
+    {
+      "name": "claude-skills1",
+      "url": "https://github.com/sjbrenchley89/claude-skills1",
+      "reason": "Additional marketing skills under marketing-skill/ directory, plus complementary engineering and product skills",
+      "overlapping_categories": ["marketing", "product", "analytics"]
+    },
+    {
+      "name": "claude-trading-skills",
+      "url": "https://github.com/sjbrenchley89/claude-trading-skills",
+      "reason": "Financial analysis skills that complement marketing analytics and growth metrics",
+      "overlapping_categories": ["analytics", "data-analysis"]
+    },
+    {
+      "name": "source-build-au",
+      "url": "https://github.com/sjbrenchley89/source-build-au",
+      "reason": "Aggregation repository that includes this package along with trading and engineering skills"
+    }
+  ],
+  "skill_discovery": {
+    "primary_path": "./skills",
+    "index_file": "./skills-index.yaml",
+    "plugin_manifest": "./.claude-plugin/plugin.json"
+  },
+  "compatibility": {
+    "claude_code": ">=1.0.0",
+    "codex_cli": ">=1.0.0",
+    "gemini_cli": ">=1.0.0"
+  }
+}
